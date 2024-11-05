@@ -1,0 +1,870 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+@import url('/fonts.css');
+body{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+.container {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.travelulu {
+  display: flex;
+  justify-content: space-between;
+  margin: 34px 66px 33px 135px;
+}
+
+.burger__menu {
+  border-radius: 30px;
+  width: 28px;
+  height: 4px;
+  background: blue;
+  position: relative;
+  margin-top: 20px;
+}
+
+.burger__menu::after {
+  content: "";
+  border-radius: 30px;
+  width: 28px;
+  height: 4px;
+  background: blue;
+  display: block;
+  position: absolute;
+  top: 7px;
+}
+
+.burger__menu::before {
+  content: "";
+  border-radius: 30px;
+  width: 28px;
+  height: 4px;
+  background: blue;
+  display: block;
+  position: absolute;
+  top: 15px;
+}
+
+.travelulu h3 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 160%;
+  color: blue;
+}
+
+.border {
+  border: 1px solid gainsboro;
+  width: 1250px;
+  height: 0;
+  margin-bottom: 24px;
+}
+
+.plans {
+  margin-left: 145px;
+  padding-top: 170px;
+  position: relative;
+}
+
+.plans h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 103%;
+  letter-spacing: 0.02em;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.button__one {
+  border-radius: 40px;
+  width: 243px;
+  height: 64px;
+  background: blue;
+  border: none;
+  color: white;
+}
+
+.button__two {
+  border-radius: 40px;
+  width: 243px;
+  height: 64px;
+  background: none;
+  border: 2px solid blue;
+  margin-left: 40px;
+  color: blue;
+}
+
+.buttons::after {
+  content: "";
+  background: url(img/Boarding.png) center/cover no-repeat;
+  display: block;
+  width: 890px;
+  height: 634px;
+  position: absolute;
+  top: -10px;
+  left: 200px;
+}
+
+.popup {
+  width: 369px;
+  height: 614px;
+  border-radius: 20px;
+  background: blue;
+  padding: 30px 35px 35px;
+  margin-left: -120px;
+  display: none;
+  position: relative;
+}
+
+.popup h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 158%;
+  letter-spacing: 0.03em;
+  color: gainsboro;
+}
+
+.Gold__Coast {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  color: white;
+  margin-top: 13px;
+  position: relative;
+}
+
+.Gold__Coast::before {
+  content: "";
+  background: url(img/Search.png) center/cover no-repeat;
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 45px;
+  left: 20px;
+}
+
+.Gold__Coast::after {
+  content: "^";
+  width: 6px;
+  height: 12px;
+  position: absolute;
+  color: gray;
+  left: 270px;
+  bottom: -27px;
+}
+
+.Check__in {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  color: white;
+  margin-top: 13px;
+  position: relative;
+}
+
+.Check__in::before {
+  content: "";
+  background: url(img/Calandar.png) center/cover no-repeat;
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 45px;
+  left: 20px;
+}
+
+.Check__in::after {
+  content: "^";
+  width: 6px;
+  height: 12px;
+  position: absolute;
+  color: gray;
+  left: 270px;
+  bottom: -27px;
+}
+
+.Check__out {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  color: white;
+  margin-top: 13px;
+  position: relative;
+}
+
+.Check__out::before {
+  content: "";
+  background: url(img/Calandar.png) center/cover no-repeat;
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 45px;
+  left: 20px;
+}
+
+.Check__out::after {
+  content: "^";
+  width: 6px;
+  height: 12px;
+  position: absolute;
+  color: gray;
+  left: 270px;
+  bottom: -27px;
+}
+
+.adults__children {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  color: white;
+  margin-top: 13px;
+  position: relative;
+}
+
+.adults__children::before {
+  content: "";
+  background: url(img/Profile.png) center/cover no-repeat;
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 45px;
+  left: 20px;
+}
+
+.adults__children::after {
+  content: "^";
+  width: 6px;
+  height: 12px;
+  position: absolute;
+  color: gray;
+  left: 270px;
+  bottom: -27px;
+}
+
+.popup input {
+  border-radius: 15px;
+  width: 296px;
+  height: 59px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  padding-left: 60px;
+  border: none;
+  background: gainsboro;
+}
+
+.popup button {
+  width: 296px;
+  height: 64px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  border: none;
+  margin-top: 27px;
+  background: palevioletred;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup h2 {
+  color: red;
+  width: 20px;
+  height: 20px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4px;
+  position: absolute;
+  top: 35px;
+  right: 40px;
+}
+
+.popup h2:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+.plans__bottom {
+  margin: 195px 0 83px;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1235px;
+  height: 200px;
+}
+
+.airplane {
+  border: 1px solid gainsboro;
+  width: 416px;
+  height: 200px;
+  text-align: center;
+  position: relative;
+}
+
+.airplane h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 106%;
+  letter-spacing: 0.03em;
+  color: blue;
+  margin: 49px 0 15px -100px;
+}
+
+.airplane p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  color: gray;
+}
+
+.airplane p::before {
+  content: "";
+  background: url(img/AirplaneTilt.png) center/cover no-repeat;
+  display: block;
+  width: 37.04px;
+  height: 37.04px;
+  position: absolute;
+  top: 45px;
+  left: 55px;
+}
+
+.world {
+  border: 1px solid gainsboro;
+  width: 416px;
+  height: 200px;
+  text-align: center;
+}
+
+.world h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 106%;
+  letter-spacing: 0.03em;
+  color: blue;
+  margin: 49px 0 15px -90px;
+}
+
+.world p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  color: gray;
+  position: relative;
+}
+
+.world p::before {
+  content: "";
+  background: url(img/GlobeHemisphereEast.png) center/cover no-repeat;
+  display: block;
+  width: 37.04px;
+  height: 37.04px;
+  position: absolute;
+  top: -50px;
+  left: 60px;
+}
+
+.byesicle {
+  border: 1px solid gainsboro;
+  width: 416px;
+  height: 200px;
+  text-align: center;
+}
+
+.byesicle h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 106%;
+  letter-spacing: 0.03em;
+  color: blue;
+  margin: 49px 0 15px -50px;
+}
+
+.byesicle p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  color: gray;
+  position: relative;
+}
+
+.byesicle p::before {
+  content: "";
+  background: url(img/Bicycle.png) center/cover no-repeat;
+  display: block;
+  width: 37.04px;
+  height: 37.04px;
+  position: absolute;
+  top: -50px;
+  left: 60px;
+}
+
+.tool__list {
+  margin: 83px 0 36px 138px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  color: gray;
+}
+
+.use__plan {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 135px;
+  margin-right: 135px;
+}
+
+.use__plan h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 104%;
+  letter-spacing: 0.02em;
+}
+
+.use__plan p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  margin-top: 9px;
+}
+
+.learn__more {
+  display: flex;
+  justify-content: space-around;
+  margin: 87px 135px 135px;
+  column-gap: 22px;
+}
+
+.learn__more img {
+  width: 263px;
+  height: 170px;
+  margin: 53px 33px 28px;
+}
+
+.learn__more h4 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 189%;
+  letter-spacing: 0.04em;
+  margin: 28px 0 7px;
+}
+
+.learn__more p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  margin-bottom: 32px;
+}
+
+.learn__more button {
+  border-radius: 40px;
+  stroke-width: 2px;
+  width: 245px;
+  height: 64px;
+  border: 2px solid gainsboro;
+}
+
+.trip__dates {
+  text-align: center;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  width: 309px;
+  height: 522px;
+}
+
+.flights {
+  text-align: center;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  width: 309px;
+  height: 522px;
+}
+
+.finances {
+  text-align: center;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  width: 309px;
+  height: 522px;
+}
+
+.gallery {
+  margin: 135px 0 0 132px;
+}
+
+.gallery h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  color: gray;
+}
+
+.places {
+  display: flex;
+  justify-content: space-between;
+  margin: 36px 132px 111px 0;
+}
+
+.places h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 104%;
+  letter-spacing: 0.02em;
+}
+
+.places p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+}
+
+.swiper__img {
+  width: 569px;
+  height: 603px;
+}
+
+.planning {
+  margin: 124px 104px 126px 89px;
+}
+
+.planning__top {
+  text-align: center;
+}
+
+.planning__top h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  color: gray;
+}
+
+.planning__top h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 104%;
+  letter-spacing: 0.02em;
+  margin: 36px 0 118px;
+}
+
+.planning__img {
+  background: url(img/AirHelp.png) center/cover no-repeat;
+}
+
+.planning__center {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.planning__center p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 189%;
+  letter-spacing: 0.04em;
+}
+
+.planning__left p:nth-child(2) {
+  margin: 188px 0 160px -70px;
+}
+
+.planning__right p:nth-child(2) {
+  margin: 188px -70px 160px 70px;
+}
+
+.planning__left p {
+  position: relative;
+}
+
+.planning__left p:nth-child(2n-1)::after {
+  content: "";
+  background: url(img/Button\ with\ Icon\ Only.png) center/cover no-repeat;
+  display: block;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: -100px;
+  top: 0;
+}
+
+.planning__left p:nth-child(2)::after {
+  content: "";
+  background: url(img/Button\ with\ Icon\ Only.png) center/cover no-repeat;
+  display: block;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: -10px;
+  top: 0;
+}
+
+.planning__right p {
+  position: relative;
+}
+
+.planning__right p:nth-child(2n-1)::after {
+  content: "";
+  background: url(img/Button\ with\ Icon\ Only\ \(1\).png) center/cover no-repeat;
+  display: block;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: -100px;
+}
+
+.planning__right p:nth-child(2)::after {
+  content: "";
+  background: url(img/Button\ with\ Icon\ Only\ \(1\).png) center/cover no-repeat;
+  display: block;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: -90px;
+}
+
+.testimontials {
+  margin: 126px 136px 94px 130px;
+}
+
+.testimontials h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  color: gray;
+}
+
+.testimontials__top {
+  display: flex;
+ justify-content: space-between;
+  margin-top: 35px;
+}
+
+.testimontials__top h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 104%;
+  letter-spacing: 0.02em;
+}
+
+.testimontials__button {
+  margin-top: 20px;
+}
+
+.testimontials__button button {
+  border-radius: 57px;
+  width: 70px;
+  height: 70px;
+  background: blue;
+  border: none;
+  color: white;
+}
+
+.testimontials__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 108px 0 94px;
+}
+
+.joe__blo {
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  width: 309px;
+  height: 359px;
+  text-align: center;
+  position: relative;
+}
+.joe__blo::before{
+  content: '';
+  background: url(img/Avatar\ face.png) center/cover no-repeat;
+  display: block;
+  width: 149px;
+  height: 149px;
+  position: absolute;
+  top: -80px;
+  left: 80px;
+}
+
+.jane__blo {
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  width: 309px;
+  height: 359px;
+  text-align: center;
+  position: relative;
+}
+.jane__blo::before{
+  content: '';
+  background: url(img/Avatar\ face\ 2.png) center/cover no-repeat;
+  display: block;
+  width: 149px;
+  height: 149px;
+  position: absolute;
+  top: -90px;
+  left: 80px;
+}
+.joe2__blo {
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+  width: 309px;
+  height: 359px;
+  text-align: center;
+  position: relative;
+}
+.joe2__blo::before{
+  content: '';
+  background: url(img/Avatar\ 3.png) center/cover no-repeat;
+  display: block;
+  width: 119px;
+  height: 119px;
+  position: absolute;
+  top: -60px;
+  left: 100px;
+}
+.border__blo {
+  border: 1px solid gainsboro;
+  width: 251px;
+  height: 0px;
+  margin: 22px 0 21px 29px;
+}
+.testimontials__bottom h6{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: blue;
+  margin-top: 80px;
+}
+.testimontials__bottom span{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: blue;
+}
+.testimontials__bottom p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 189%;
+  letter-spacing: 0.04em;
+}
+.contact__box{
+  background: url(img/Group\ 248.png) center/cover no-repeat;
+  width: 980px;
+  height: 437px;
+  border-radius: 20px;
+  margin: 0 135px;
+  text-align: center;
+  padding-top: 142px;
+}
+.contact__box h2{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 104%;
+  letter-spacing: 0.02em;
+  color: white;
+}
+.contact__box button{
+  width: 243px;
+  height: 64px;
+  border-radius: 30px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  margin-top: 33px;
+}
+.footer__bottom{
+  display: flex;
+  justify-content: space-between;
+  margin: 89px 135px 0;
+}
+.footer__left h5{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.04em;
+  color: blue;
+}
+.footer__left p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.05em;
+  margin: 30px 0;
+}
+.footer__left h6{
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 169%;
+  letter-spacing: 0.02em;
+}
+.footer__center h5{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.04em;
+}
+.footer__center li{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.05em;
+  color: gray;
+}
+.footer__center li:nth-child(2n-1){
+  margin: 22px 0;
+}
+.footer__right h5{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.04em;
+}
+.footer__right li{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.05em;
+  color: gray;
+  margin-top: 22px;
+}
+.footer__right li a{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.05em;
+}
+ 

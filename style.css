@@ -11,7 +11,7 @@ body{
 }
 
 .container {
-  width: 1250px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -866,5 +866,8 @@ body{
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.05em;
+}
+.burger__box h2{
+  display: none;
 }
  

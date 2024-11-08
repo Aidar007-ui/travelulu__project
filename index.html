@@ -6,20 +6,23 @@
     <title>Travelulu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="travelulu">
                 <h3>Travelulu</h3>
-                <div class="burger__menu"></div>
+                <div onclick="showBurger__box()" class="burger__menu"></div>
+                <div class="burger__box">
+                    <h2 onclick="showBurger__box()">x</h2>
+                </div>
             </div>
             <div class="border"></div>
         </div>
     </header>
     <main>
-        <section>
+        <section class="section__plans">
             <div class="container">
             <div class="plans">
                 <h1>Plan your next big <br> trip overseas.</h1>
@@ -57,7 +60,7 @@
             </div>
         </div>
         </section>
-        <section>
+        <section class="section__list">
             <div class="container">
                 <h5 class="tool__list">TOOL LIST</h5>
                 <div class="use__plan">

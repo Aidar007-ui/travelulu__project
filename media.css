@@ -1,0 +1,146 @@
+@media(max-width:1000px){
+    .container{
+        max-width: 1000px;
+    }
+    .plans__bottom.open{
+        left: 282px;
+    }
+    .buttons::after{
+        width: 666px;
+        height: 434px;
+        margin: 130px 0 0 -40px;
+    }  
+    .plans__bottom{
+        display: none;
+    }
+
+    .travelulu{
+        position: relative;
+    }
+    .burger__menu{
+        position: absolute;
+        top: 0;
+        right: 40px;
+    }
+    .burger__box{
+        width: 500px;
+        height: 600px;
+        background: blue;
+        display: none;
+    }
+    .burger__box.open{
+        display: block;
+    }
+    .burger__box h2{
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        font-size: 30px;
+        display: block;
+        color: red;
+        background: white;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+    }
+    .burger__box h2:hover{
+        cursor: pointer;
+        background: red;
+        color: white;
+    }
+    .section__plans{
+        position: relative;
+    }
+    .plans__bottom.open{
+        display: block;
+        position: absolute;
+        top: -850px;
+        left: 430px;
+    }
+    .plans__bottom h4{
+        color: whitesmoke;
+    }
+    .use__plan{
+        display: block;
+    }
+    .learn__more{
+        margin-left: 10px;
+    }
+    .places{
+        display: block;
+    }
+    .contact__box{
+        width: 722px;
+    }
+}
+@media(max-width:800px){
+    .container{
+        max-width: 800px;
+    }
+    .plans__bottom.open{
+        left: 282px;
+    }
+    .burger__box h2{
+        right: 1px;
+        top: 1px;
+    }
+    .buttons::after{
+        margin: 0 0 0 -210px ;
+    }
+    .plans{
+        padding-top: 420px;
+    }
+    .learn__more{
+        display: block;
+        margin-left: 150px;
+    }
+    .testimontials__top{
+        display: block;
+    }
+    .testimontials__button{
+        display: none;
+    }
+    .testimontials__bottom{
+        display: block;
+    }
+    .contact__box{
+        margin-left: 30px;
+    }
+    .footer__bottom{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media(max-width:600px){
+    .container{
+        min-width: 600px;
+    }
+    .plans h1{
+        font-size: 44px;
+    }
+    .button__two{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .buttons::after{
+        width: 486px;
+    }
+    .use__plan h3{
+        font-size: 28px;
+    }
+    .places h3{
+        font-size: 28px;
+    }
+    .contact__box{
+        width: 544px;
+    }
+    .contact__box h2{
+        font-size: 28px;
+    }
+    .footer__bottom{
+        flex-wrap: wrap;
+    }
+    .footer__right{
+        margin-left: 200px;
+    }
+}
